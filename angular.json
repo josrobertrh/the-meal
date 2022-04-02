@@ -34,9 +34,7 @@
               "src/styles.css",
               "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": [
-                "heroku-postbuild": "ng build --prod"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -104,23 +102,11 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": [  "scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
-  },]
+            "scripts": []
           }
         }
       }
     }
-  },
- "engines": {
-    "node": "12.14.1",
-    "npm": "6.13.4"
   },
   "defaultProject": "the-meal"
 }
