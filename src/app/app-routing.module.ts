@@ -6,7 +6,7 @@ import { DetalleComponent } from './detalle/detalle.component'
 import { MenuComponent } from './menu/menu.component'
 import { AuthGuardService } from './services/auth-guard.service';
 
-const routes: Routes = [{path:'',component:MenuComponent,component:ProfileComponent},{path:'login',component:LoginComponent},{path:'profile',component:ProfileComponent,
+const routes: Routes = [{path:'',component:MenuComponent,canActivate:[AuthGuardService]},{path:'login',component:LoginComponent},{path:'profile',component:ProfileComponent,
     canActivate:[AuthGuardService]},{path:'detalle/:id',component:DetalleComponent,
     canActivate:[AuthGuardService]}];
 
